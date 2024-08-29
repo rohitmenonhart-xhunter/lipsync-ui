@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #6200ea;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #03dac6;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading-container {
+    margin-top: 20px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #333;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #03dac6;
+}
+
+#eta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+#output-container {
+    margin-top: 20px;
+    color: #e0e0e0;
+}

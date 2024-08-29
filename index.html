@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Processor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Video and Audio for Processing</h1>
+        <form id="upload-form">
+            <label for="server-url">Server URL:</label>
+            <input type="text" id="server-url" name="server-url" placeholder="Enter server URL" required><br><br>
+
+            <label for="video-file">Select Video:</label>
+            <input type="file" id="video-file" name="video" accept="video/*" required><br><br>
+
+            <label for="audio-file">Select Audio (optional):</label>
+            <input type="file" id="audio-file" name="audio" accept="audio/*"><br><br>
+
+            <button type="submit">Upload and Process</button>
+        </form>
+
+        <div id="loading-container" class="hidden">
+            <progress id="progress-bar" max="100" value="0"></progress>
+            <p id="eta"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
